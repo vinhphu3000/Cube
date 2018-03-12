@@ -1,0 +1,15 @@
+ManifestFileVersion: 0
+CRC: 1686964225
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: commondata/main.assetbundle
+      Dependencies: {}
+    Info_1:
+      Name: prefab/common.assetbundle
+      Dependencies: {}
+    Info_2:
+      Name: prefab/cube.assetbundle
+      Dependencies:
+        Dependency_0: commondata/main.assetbundle
+        Dependency_1: prefab/common.assetbundle

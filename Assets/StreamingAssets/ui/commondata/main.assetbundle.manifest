@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2838909461
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f2d141f0034f5b4c7a8429a298f505e2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Texture/main/activity/redp.png
+Dependencies: []
