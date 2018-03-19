@@ -229,8 +229,12 @@
     <Compile Include="Assets\Script\Game\Main.cs" />
     <Compile Include="Assets\Script\Game\TestUI.cs" />
     <Compile Include="Assets\Script\Manager\GameManager.cs" />
+    <Compile Include="Assets\Script\Manager\SceneResourceManager.cs" />
     <Compile Include="Assets\Script\Manager\UILayerManager.cs" />
     <Compile Include="Assets\Script\Manager\UIManager.cs" />
+    <Compile Include="Assets\Script\Obj\ClientCha.cs" />
+    <Compile Include="Assets\Script\Obj\ModelObj.cs" />
+    <Compile Include="Assets\Script\Obj\Obj.cs" />
     <Compile Include="Assets\Script\Platform\IResourcePath.cs" />
     <Compile Include="Assets\Script\Resource\BundleManager.cs" />
     <Compile Include="Assets\Script\Resource\IResourceManager.cs" />
@@ -285,6 +289,8 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+    <None Include="Assets\Res\Shader\ShaderForNPC.shader" />
+    <None Include="Assets\Res\Shader\demoShader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

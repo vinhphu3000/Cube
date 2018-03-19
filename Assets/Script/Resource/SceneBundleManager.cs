@@ -1,17 +1,16 @@
-﻿using System;
+﻿using CloverGame.Config;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEditor;
 using UnityEngine;
 
 namespace CloverGame.Resource
 {
     public class ModelInfoData : IInfoData
-    {
-        public static string PathModelPrefab = "/Model";
-        public static string m_bundleExt = ".assetbundle";
-
+    { 
         public ModelInfoData(string path, string name)
         {
             this.path = path;
@@ -26,22 +25,36 @@ namespace CloverGame.Resource
             return name;
         }
 
-        public string GetBundleLoadUrl()
-        {
-            return ResourcePath.GetAssetsPath(PathModelPrefab, name.ToLower(), m_bundleExt);
-        }
     }
 
     public class SceneBundleManager : IResourceManager
     {
+        public static string PathModelPrefab = "/Model/Prefab";
+        public static string m_bundleExt = ".assetbundle";
+
         public override IEnumerator LoadResource(IInfoData iData, LoadBundleFinish delFinish, object param1, object param2)
         {
             ModelInfoData infoData = iData as ModelInfoData;
-            
-            if (infoData == null)
-                yield break;            
 
-            string loadPath = infoData.GetBundleLoadUrl();
+            if (infoData == null)
+                yield break;
+
+#if UNITY_EDITOR
+            if (PlayerSetting.SimulateAssetBundleInEditor)
+            {                
+                if (null != delFinish)
+                {
+                    string assetPath = GetBundleLoadUrl(PathModelPrefab, infoData.name.ToLower(), ".prefab");
+                    GameObject gb = AssetDatabase.LoadAssetAtPath<GameObject>(assetPath);
+                    delFinish(infoData, gb, param1, param2);
+                }
+
+                yield break;
+            }
+#endif
+       
+
+            string loadPath = GetBundleLoadUrl(PathModelPrefab, infoData.name.ToLower(), m_bundleExt);
 
             AssetBundleCreateRequest req = GetBundleRequest(loadPath);
             yield return req;
@@ -69,6 +82,10 @@ namespace CloverGame.Resource
         {
             return AssetBundle.LoadFromFileAsync(path);
         }
-     
+
+        public string GetBundleLoadUrl(string subFolder, string localName, string fileExt = "")
+        {
+            return ResourcePath.GetAssetsPath(subFolder, localName, fileExt);
+        }
     }
 }

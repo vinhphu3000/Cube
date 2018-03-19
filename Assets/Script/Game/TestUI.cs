@@ -31,6 +31,14 @@ namespace CloverGame.Cube
             {
                 UIManager.Instance().LoadItem(UIInfo.CubeItem, OnLoadUIItemDelegate);
             }
+
+            if (GUILayout.Button("show Model"))
+            {
+                ModelInfoData infoData = new ModelInfoData("Model", "Ethan");
+
+                SceneResourceManager.Instance().LoadResource(infoData);
+            }    
+
         }
 
         public void OnLoadUIItemDelegate(GameObject curWindow, object param)
