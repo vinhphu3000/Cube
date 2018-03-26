@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 986487957
+CRC: 2310149124
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b85e7ed227a5f8c1fde8ccca74d09052
+    Hash: 0908421734c8d4ccb490a2c3ebe1cf52
   TypeTreeHash:
     serializedVersion: 2
-    Hash: e3e54ef9e05ec5456ad8357780f1ce22
+    Hash: 35e088e667f97d2d6a37e0b3f221044a
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -27,14 +27,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 65
   Script: {instanceID: 0}
-- Class: 114
-  Script: {fileID: 11500000, guid: 78ee4d1fc6b42444087bd2698cdcc2bb, type: 3}
-- Class: 115
-  Script: {instanceID: 0}
-- Class: 131
-  Script: {instanceID: 0}
 Assets:
 - Assets/Res/Prefab/Cube.prefab
 Dependencies:
+- E:/Projects/Unity3d/Cube/Cube/Assets/StreamingAssets/ui/commondata/common.assetbundle
 - E:/Projects/Unity3d/Cube/Cube/Assets/StreamingAssets/ui/commondata/main.assetbundle
-- E:/Projects/Unity3d/Cube/Cube/Assets/StreamingAssets/ui/prefab/common.assetbundle

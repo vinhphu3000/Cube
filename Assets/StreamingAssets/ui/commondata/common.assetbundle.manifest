@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
-CRC: 3538737961
+CRC: 946652121
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 043b3717869a7978c814070dcee07bfe
+    Hash: 70bcf84e87f43e0c4bc308692778ed9c
   TypeTreeHash:
     serializedVersion: 2
-    Hash: c1642440719609290a7e09a50a7286f4
+    Hash: 7bd39743cce4d37940997ab4332a0cd7
 HashAppended: 0
 ClassTypes:
-- Class: 28
+- Class: 48
   Script: {instanceID: 0}
 Assets:
-- Assets/Res/Texture/main/activity/NewYearTree.png
+- Assets/Res/Shader/demoShader.shader
 Dependencies: []

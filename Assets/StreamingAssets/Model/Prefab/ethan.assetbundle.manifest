@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 2596233616
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 45af7cda3ba9828df3b6741587ff80f9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 656579fe1ba627741d76d81433c97c36
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Model/Prefab/Ethan.prefab
+Dependencies: []
